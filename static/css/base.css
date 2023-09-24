@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+@layer components {
+  .hamburger {
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    transition: all 0.25s;
+    position: relative;
+    outline: none;
+    border: none;
+    background: transparent;
+    transition: all 0.25s;
+  }
+  
+.hamburger-top, 
+.hamburger-bottom, 
+.hamburger-middle{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 30px;
+  border-radius: 10px;
+  transition: all 0.25s;
+  background: #000010;
+}
+
+
+.hamburger-top{
+  transform: translateY(5px);
+  width: 25px;
+}
+
+.hamburger-middle{
+  transform: translateY(12px);
+  width: 20px;
+}
+
+.hamburger-bottom{
+  transform: translateY(20px);
+}
+
+.open{
+  transform: rotate(90deg);
+  transform: translateY(0px);
+}
+
+.open .hamburger-top{
+  width: 30px;
+  transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburger-middle{
+  display: none;
+}
+
+.open .hamburger-bottom{
+  width: 30px;
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+.hide {
+  position: absolute;
+  opacity: 0;
+  transition: all 0.2s;
+}
+
+.background {
+  background-image: linear-gradient(to bottom right, transparent , rgb(59 130 246 / var(--tw-text-opacity)));
+  background-size: 550px 240px;
+  background-repeat: no-repeat;
+}
+
+.background2 {
+  background-image: linear-gradient(to bottom right, transparent , rgb(59 130 246 / var(--tw-text-opacity)));
+  background-size: 700px 240px;
+  background-repeat: no-repeat;
+}
+
+}
