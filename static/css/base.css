@@ -7,8 +7,8 @@
 * {
   font-family: 'Poppins', sans-serif;
   font-size: 93%;
-
-::-webkit-scrollbar {
+}
+/* ::-webkit-scrollbar {
     width: 6px;
   }
   
@@ -27,7 +27,7 @@
 
   ::-webkit-scrollbar-thumb:hover {
     opacity: 0.9;
-  }
+  } */
 
 
 @layer components {
@@ -97,7 +97,7 @@
 }
 
 .background {
-  background-image: linear-gradient(to bottom right, transparent , rgb(29 78 216 / var(--tw-bg-opacity)));
+  background-image: linear-gradient(to bottom right, rgba(0,0,0,0.4) , rgb(29 78 216 / var(--tw-bg-opacity)));
   background-size: 700px 700px;
   background-repeat: no-repeat;
 }
@@ -114,7 +114,12 @@
      background-image: linear-gradient(to bottom right, transparent , rgb(59 130 246 / var(--tw-bg-opacity)));
   background-size: 730px 280px;
   background-repeat: no-repeat;
-  } 
+  }
+  
+  .powered {
+     @apply w-60 h-auto py-10 px-4 rounded-xl block shadow bg-white shadow-xl
+     shadow-gray-400 flex flex-col items-center justify-center
+  }
   
   .course-list {
     display: flex;
@@ -130,7 +135,20 @@
   @apply h-auto rounded-xl  shadow shadow-gray-200 bg-white
   shadow shadow-lg shadow-[rgba(0,0,0,0.2)];
   }
-
+  
+  .testimonial {
+  @apply w-80 h-[19rem] rounded-xl  shadow shadow-gray-200 bg-gray-100
+  shadow shadow-lg shadow-[rgba(0,0,0,0.2)] flex justify-center flex-col
+  items-center relative px-6 pb-5
+  }
+  
+    .p {
+  @apply before:content-['\201C']
+  before:text-5xl before:font-serif before:font-bold after:content-['\201D']
+  before:absolute before:left-0 before:-translate-y-3  after:text-5xl after:font-serif after:font-bold after:right-2
+  after:absolute
+  }
+/* 
 .course-list::-webkit-scrollbar {
     width: 6px;
   }
@@ -150,6 +168,6 @@
 
   .course-list::-webkit-scrollbar-thumb:hover {
     opacity: 0.9;
-  }
+  } */
 
 }
