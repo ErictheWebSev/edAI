@@ -6,7 +6,29 @@
 
 * {
   font-family: 'Poppins', sans-serif;
-}
+  font-size: 93%;
+
+::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+
+  ::-webkit-scrollbar-track {
+    background: #888;
+    border-radius: 10px;
+  }
+  
+
+  ::-webkit-scrollbar-thumb {
+    background: rgb(29 78 216 / var(--tw-bg-opacity));
+    border-radius: 10px;
+  }
+  
+
+  ::-webkit-scrollbar-thumb:hover {
+    opacity: 0.9;
+  }
+
 
 @layer components {
   .hamburger {
@@ -75,15 +97,59 @@
 }
 
 .background {
-  background-image: linear-gradient(to bottom right, transparent , rgb(59 130 246 / var(--tw-text-opacity)));
-  background-size: 550px 240px;
+  background-image: linear-gradient(to bottom right, transparent , rgb(29 78 216 / var(--tw-bg-opacity)));
+  background-size: 700px 700px;
   background-repeat: no-repeat;
 }
 
 .background2 {
-  background-image: linear-gradient(to bottom right, transparent , rgb(59 130 246 / var(--tw-text-opacity)));
+  background-image: linear-gradient(to top right, transparent , rgb(59 130 246 / var(--tw-text-opacity)));
   background-size: 700px 240px;
   background-repeat: no-repeat;
 }
+
+  .category-box {
+    @apply w-80 sm:w-60 h-[18rem] py-10 px-4 rounded-xl block shadow
+    overflow-x-hidden overflow-hidden;
+     background-image: linear-gradient(to bottom right, transparent , rgb(59 130 246 / var(--tw-bg-opacity)));
+  background-size: 730px 280px;
+  background-repeat: no-repeat;
+  } 
+  
+  .course-list {
+    display: flex;
+    overflow-x: scroll;
+    padding: 10px;
+    margin: 0 0 4rem 0;
+    scrollbar-width: thin;
+    scrollbar-color: #ff9900 #333;
+  }
+  
+  .course-box {
+    flex: 0 0 18rem;
+  @apply h-auto rounded-xl  shadow shadow-gray-200 bg-white
+  shadow shadow-lg shadow-[rgba(0,0,0,0.2)];
+  }
+
+.course-list::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+
+  .course-list::-webkit-scrollbar-track {
+    background: #999;
+    border-radius: 10px;
+  }
+  
+
+  .course-list::-webkit-scrollbar-thumb {
+    background: #f23;
+    border-radius: 10px;
+  }
+  
+
+  .course-list::-webkit-scrollbar-thumb:hover {
+    opacity: 0.9;
+  }
 
 }

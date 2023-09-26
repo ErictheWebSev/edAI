@@ -3,13 +3,13 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EdAI | AI powerer Educative platform</title>
+    <title>EdAI | AI powered Educative platform</title>
     <link rel="stylesheet" href="/static/css/styles.css" />
     <!--   font awesome cdn   -->
     <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
-    <div class="container w-full h-screen bg-white">
+    <div class="w-screen h-screen bg-white">
       <header class="bg-transparent backdrop-blur-2xl top-0 sticky mb-4 z-10">
         <div class="max-w-4xl mx-auto flex justify-between items-center p-4">
           <h1 class="text-3xl font-medium text-blue-500 tracking-wider flex">
@@ -25,17 +25,19 @@
           
         <nav class="hidden sm:block space-x-8 text-xl" aria-label="main">
           <a class="hover:opacity-90" href="#about"> About</a>
-          <a class="hover:opacity-90" href="#services">Services</a>
+          <a class="hover:opacity-90" href="#category">Category</a>
+          <a class="hover:opacity-90" href="#courses">Featured</a>
           <a class="hover:opacity-90" href="#contact">Contact</a>
           <a class="hover:opacity-90 bg-blue-500 py-2 px-4 rounded-lg text-white" href="#"> Sign Up</a>
         </nav>
         </div>
         <!--    Mobile Menu      -->
-        <section class="w-full fixed h-50 background flex flex-col
-        justify-center text-2xl items-center hidden space-y-6 py-3 border-b
-        border-gray-300 text-gray-700" id="menu">
+        <section class="w-full fixed h-screen background flex flex-col
+        justify-center text-2xl items-center hidden space-y-6 py-4 border-b
+        border-gray-300 text-white font-bold" id="menu">
           <a class="hover:opacity-90" href="#about" >About</a>
-          <a class="hover:opacity-90" href="#services"> Services</a>
+          <a class="hover:opacity-90" href="#category"> Category</a>
+          <a class="hover:opacity-90" href="#courses"> Featured</a>
           <a class="hover:opacity-90" href="#contact">Contact</a>
           <a class="hover:opacity-90 bg-blue-500 py-4 px-10 rounded-lg text-white" href="#"> Sign Up</a>
         </section>
@@ -44,7 +46,7 @@
       
      <div class="max-w-[60rem] mx-auto">
       <!-----  Home Section  ----->
-      <section id="home" class="flex flex-col-reverse sm:flex-row mb-12 p-4 gap-12 justify-center items-center">
+      <section id="home" class="flex flex-col-reverse sm:flex-row mb-16 p-4 gap-12 justify-center items-center">
         <article class="sm:w-1/2">
           <h2 class="max-w-md text-4xl text-slate-900 dark:text-slate-400 text-center sm:text-5xl
             font-bold sm:text-left" data-aos="zoom-out"
@@ -58,6 +60,9 @@
             mt-8 font-bold" data-aos="fade-right" data-aos-delay="300">
             Ready to start? Let's fly!!!
           </p>
+        <p class="max-w-md text-2xl text-slate-600 dark:text-slate-500 text-center sm:text-left
+            mt-8 font-bold"><a class="hover:opacity-90 bg-blue-500 py-4 px-10
+            rounded-lg text-white" href="#"> Get started</a></p>
         </article>
 
         <img class="sm:w-1/2" src="./static/images/image.png" alt="Rocket dab"
@@ -70,12 +75,12 @@
       
       <!--    About section    -->
       
-      <h2 class="text-4xl text-blue-500 text-center font-bold
+      <h2 class="text-4xl text-blue-500 text-center font-bold mt-32
       underline-offset-0">What's edAI!</h2>
-      <section id="about" class="flex flex-col-reverse sm:flex-row mb-12 p-4
-      sm:space-x-12 justify-between items-center">
-        <article class="sm:w-1/2 border border-gray-400 py-6 px-4 rounded-xl
-        bg-gradient-to-br from-[#4D70EF34] to-blue-200 max-w-prose">
+      <section id="about" class="flex flex-col-reverse sm:flex-row mt-28 p-4
+      sm:space-x-7 justify-between items-center">
+        <article class="sm:w-full w-screen sm:border sm:border-gray-400 py-6 px-4  sm:rounded-xl
+        bg-gradient-to-br from-[#4D70EF34] to-blue-100 sm:max-w-prose">
           <div class="flex items-center justify-center">
           <h1 class="text-3xl font-medium text-blue-500 tracking-wider flex
           text-center mx-auto">
@@ -83,13 +88,13 @@
             <a href="#home">edAI</a>
           </h1>
           </div>
-          <p class="max-w-md text-2xl text-slate-600 text-center sm:text-left mt-8" data-aos="zoom-in" data-aos-delay="200">
+          <p class="max-w-md  text-xl text-slate-600 text-center sm:text-left mt-8" data-aos="zoom-in" data-aos-delay="200">
             edAI is an AI-powered learning platform that's designed to help you
             take your learning to new heights. We use the latest in AI
             technology to provide personalized recommendations, interactive
             exercises, and engaging content that's tailored to your specific
             learning goals. Whether you're looking to brush up on your math
-            skills, learn a new language, or explore a new topic...
+            skills, learn a new language, or explore a new topic...<br>
             <span class="font-bold">edAI has you covered.</span>
           </p>
         </article>
@@ -97,6 +102,153 @@
           <img class="sm:w-1/2 mb-8 rounded-lg  border-l-8 border-l-blue-500" src="./static/images/image2.png" alt="Rocket dab"
           data-aos="fade-left" data-aos-delay="400"/>
       </section>
+      
+    <!--   Category Section     -->
+      
+     <section id="category" class="max-w-5xl px-3 py-4">
+      <h1 class="text-2xl text-blue-500 text-center font-bold underline-offset-0
+      mt-28">
+        Choose favourite Courses From <span class="text-blue-800">Our Categories</span>
+      </h1>
+      <div class="flex flex-wrap flex-col sm:flex-row w-full items-center
+      justify-center space-y-5 sm:justify-around mt-5">
+        <div class="category-box space-y-3 sm:translate-y-3">
+          <div class="text-4xl text-brightorange w-14 h-14 border flex
+          items-center justify-center rounded-full border-blue-200"><i class="fa
+          fa-code text-center"></i></div>
+          <h3 class="text-2xl font-semibold text-gray-700">Programming</h3>
+          <p class="text-lg text-gray-600">Best programming course on different languages and concepts.</p>
+          
+          <p class="text-sm font-bold text-gray-800 text-right">&#8212; 46 Courses</p>
+        </div>
+        <div class="category-box space-y-3 sm:translate-y-3">
+          <div class="text-4xl text-brightorange w-14 h-14 border flex
+          items-center justify-center rounded-full border-blue-200"><i class="fa
+          fa-paint-brush text-center"></i></div>
+          <h3 class="text-2xl font-semibold text-gray-700">Design</h3>
+          <p class="text-lg text-gray-600">Learn designing based on our variety of courses.</p>
+          
+          <p class="text-sm font-bold text-gray-800 text-right">&#8212; 28 Courses</p>
+        </div>
+        <div class="category-box space-y-3 sm:translate-y-3">
+          <div class="text-4xl text-brightorange w-14 h-14 border flex
+          items-center justify-center rounded-full border-blue-200"><i class="fa
+          fa-school text-center"></i></div>
+          <h3 class="text-2xl font-semibold text-gray-700">Education</h3>
+          <p class="text-lg text-gray-600">Delve into the world of education from over 50 courses.</p>
+          
+          <p class="text-sm font-bold text-gray-800 text-right">&#8212; 58 Courses</p>
+        </div>
+        <div class="category-box space-y-3 sm:translate-y-3">
+          <div class="text-4xl text-brightorange w-14 h-14 border flex
+          items-center justify-center rounded-full border-blue-200"><i class="fa
+          fa-computer text-center"></i></div>
+          <h3 class="text-2xl font-semibold text-gray-700">IT & Software</h3>
+          <p class="text-lg text-gray-600">Learn more;about technology and software creation.</p>
+          
+          <p class="text-sm font-bold text-gray-800 text-right">&#8212; 32 Courses</p>
+        </div>
+        <div class="category-box space-y-3 sm:translate-y-3">
+          <div class="text-4xl text-brightorange w-14 h-14 border flex
+          items-center justify-center rounded-full border-blue-200"><i class="fa
+          fa-video text-center"></i></div>
+          <h3 class="text-2xl font-semibold text-gray-700">Photography</h3>
+          <p class="text-lg text-gray-600">Explore the world of video creation and photography.</p>
+          
+          <p class="text-sm font-bold text-gray-800 text-right">&#8212; 16 Courses</p>
+        </div>
+
+
+      </div>
+     </section>
+     
+    <!--   Category Section ends     -->
+    
+     <!--   Courses Section    -->
+     
+    <section id="courses" class="max-w-5xl px-3 py-4 mt-16">
+      <h1 class="text-2xl text-blue-500 text-center sm:text-left font-bold underline-offset-0
+      mt-28 mb-5">
+        Our Top Quality <span class="text-blue-800">Popular Courses</span>
+      </h1>
+      <p class="text-lg text-gray-400 text-center sm:text-left">Join some of our most popular AI powered courses</p>
+      <div class="course-list space-x-5 mt-8">
+        <div class="course-box">
+          <img class="w-full rounded-t-xl h-64" src="static/images/category.jpg" alt="" />
+          <div class="max-w-prose p-4 space-y-3">
+            <div class="flex justify-between">
+              <h2 class="text-blue-500 text-lg font-extrabold">Programming</h2>
+              <h2 class="text-blue-500 text-lg font-extrabold"><i class="fas
+              fa-share"></i></h2>
+              
+            </div>
+          <h2 class="text-2xl text-gray-800 capitalize font-bold"> All level
+          coding class...</h2>
+          <p class="text-sm text-gray-500"> Learn diverse programming languages. Code Setups. Development
+          Environments.</p>
+          <div class="flex space-x-3">
+            <p class="text-sm text-gray-600">4.5</p>
+            <div class="flex text-sm text-yellow-300 space-x-2">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half"></i>
+            </div>
+            <p class="text-sm font-semibold capitalize">recommended</p>
+          </div>
+          </div>
+        </div>
+        <div class="course-box">
+          <img class="w-full rounded-t-xl h-64" src="static/images/category2.jpg" alt="" />
+          <div class="max-w-prose p-4 space-y-3 mt-4">
+            <div class="flex justify-between">
+              <h2 class="text-blue-500 text-lg font-extrabold">Design</h2>
+              <h2 class="text-blue-500 text-lg font-extrabold"><i class="fas
+              fa-share"></i></h2>
+              
+            </div>
+          <h2 class="text-2xl text-gray-800 capitalize font-bold"> Educative design class</h2>
+          <p class="text-sm text-gray-500"> Learn artwork, content design. Basic concepts.</p>
+          <div class="flex space-x-3">
+            <p class="text-sm text-gray-600">3.5</p>
+            <div class="flex text-sm text-yellow-300 space-x-2">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half"></i>
+            <i class="fab fa-star"></i>
+            </div>
+            <p class="text-sm font-semibold capitalize">Fair</p>
+          </div>
+          </div>
+        </div>
+        <div class="course-box justify-between">
+          <img class="w-full rounded-t-xl h-64" src="static/images/category3.jpg" alt="" />
+          <div class="max-w-prose p-4 space-y-3 mt-4">
+            <div class="flex justify-between">
+              <h2 class="text-blue-500 text-lg font-extrabold">Education</h2>
+              <h2 class="text-blue-500 text-lg font-extrabold"><i class="fas
+              fa-share"></i></h2>
+              
+            </div>
+          <h2 class="text-2xl text-gray-800 capitalize font-bold">All Subject
+          <p class="text-sm text-gray-500">Made for science, tech, art...</p></h2>
+          <div class="flex space-x-3">
+            <p class="text-sm text-gray-600">4.5</p>
+            <div class="flex text-sm text-yellow-300 space-x-2">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half"></i>
+            </div>
+            <p class="text-sm font-semibold capitalize">recommended</p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
       </div>
       
     </div>
