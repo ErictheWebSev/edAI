@@ -169,5 +169,30 @@
   .course-list::-webkit-scrollbar-thumb:hover {
     opacity: 0.9;
   } */
+  
+  .icons {
+    @apply w-12 h-12 rounded-full border-gray-300 border flex items-center justify-center text-3xl text-gray-900
+  }
+  
+  .auth {
+    @apply w-full h-14 pl-12 py-4 outline-none text-gray-800
+    rounded-lg border border-blue-500 text-lg focus:border-brightorange 
+  }
+  
+  .button {
+    @apply w-40 h-16 px-4 py-3 bg-transparent border border-white text-lg text-center rounded-[4rem] text-white hover:bg-white hover:text-blue-500 transition-all 
+  }
+  
+  .mobile-switch {
+    @apply absolute z-[100];
+    /* transition: all 3s ease-in; */
+  }
+  
+  .mobile-switch2 {
+    @apply opacity-0;
+    transition: all 1s ease-in;
+  }
+  
+
 
 }

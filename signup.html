@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html class="scroll-smooth">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EdAI | Sign Up</title>
+    <link rel="stylesheet" href="/static/css/styles.css" />
+    <!--   font awesome cdn   -->
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="w-screen h-screen bg-white sm:flex sm:justify-center sm:items-center">
+      <div class="sm:w-[92%] w-full h-full sm:h-auto rounded-xl bg-white shadow shadow-2xl
+      shadow-[rgba(0,0,0,0.2)] border-t border-t-gray-100 flex">
+        
+        <div class="sm:w-[40%] w-full h-full bg-blue-500 sm:rounded-l-xl z-10
+        absolute sm:relative px-5 pt-3 sm:pb-12 form1">
+          <h1 class="text-2xl font-medium text-white tracking-wider flex">
+            <div class="h-5 w-5 rounded-full mt-1 mr-1 bg-brightorange"></div>
+            <a href="#home">edAI</a>
+          </h1>
+          <div class="flex items-center justify-center mt-28 flex-col space-y-12">
+            
+            <img class="w-54 sm:h-54 h-48" src="/static/images/login3.png" alt="" />
+            <h2 class="text-4xl text-white font-bold text-center">Welcome To edAI!!!</h2>
+            
+            <p class="text-white text-lg text-center">Create an account with us
+            today or sign in and experience learning in a modern style</p>
+            <div class="flex justify-between space-x-3">
+             <button class="button sm:hidden" id="signupChange">Sign Up</button>
+             <button class="button sm:hidden" id="signupChange2">Sign In</button>
+            </div>
+            
+            <button class="button hidden sm:block" id="signinChange">Sign In</button>
+            <button class="button hidden" id="signinChange2">Sign Up</button>
+          </div>
+        </div>
+        
+        <div class="sm:w-[60%] h-full sm:rounded-xl w-full 
+        sm:relative  bg-white sm:px-12 pt-16 form2">
+          <div class="flex sm:items-center justify-center w-full">
+            
+            <div class="content space-y-7">
+              <h2 class="text-4xl text-blue-500 text-center font-bold">Create An Account</h2>
+          
+              <div class="flex items-center justify-center space-x-4">
+                <div class="icons">
+                  <i class="fab fa-facebook-f"></i>
+                </div>
+                <div class="icons">
+                  <i class="fab fa-google-plus-g"></i>
+                </div>
+                <div class="icons">
+                  <i class="fab fa-github"></i>
+                </div>
+              </div>
+              <p class="text-gray-400 text-lg capitalize text-center">Or register with email.</p>
+              
+              <form id="signupForm"  method="post">
+                <div class="flex mb-6 px-4 relative">
+                  <i class="fas fa-user translate-x-4 translate-y-5 text-xl
+                  text-gray-600 absolute"></i>
+                  <input type="text" name="name" id="name" placeholder="Full Name" class="auth" />
+                </div>
+                
+                <div class="flex mb-6 px-4 relative">
+                  <i class="fas fa-envelope translate-x-4 translate-y-5 text-xl
+                  text-gray-600 absolute"></i>
+                  <input type="email" name="email" id="email" placeholder="Email address" class="auth" />
+                </div>
+                
+                <div class="flex mb-6 px-4 relative">
+                  <i class="fas fa-lock translate-x-4 translate-y-5 text-xl
+                  text-gray-600 absolute"></i>
+                  <input type="password" name="password" id="password" placeholder="Full Name" class="auth" />
+                </div>
+                
+                <div class="flex px-4 mb-6 justify-center items-center">
+                  <button class="w-80 h-14 rounded-lg bg-blue-500 text-lg
+                  text-center px-6 py-4 hover:opacity-90 text-white" type="submit">Sign
+                  Up</button>
+                </div>
+                <h3 class="text-xl text-center my-2 text-gray-400 sm:hidden">OR</h3>
+                <div class="sm:hidden flex px-4 mb-6 justify-center items-center">
+                  <button id="signupChange3" class="w-80 h-14 rounded-lg border border-brightorange text-lg
+                  text-center px-6 py-4 hover:bg-brightorange hover:text-white text-blue-500">Sign
+                  In</button>
+                </div>
+              </form>
+            </div>
+            
+          </div>
+        </div>
+        <div class="sm:w-[60%] h-full sm:rounded-xl w-full 
+        sm:relative  bg-white sm:px-12 pt-16 form3 hidden">
+          <div class="flex sm:items-center justify-center w-full">
+            
+            <div class="content space-y-7">
+              <h2 class="text-4xl text-blue-500 text-center font-bold">Sign into edAI</h2>
+          
+              <div class="flex items-center justify-center space-x-4">
+                <div class="icons">
+                  <i class="fab fa-facebook-f"></i>
+                </div>
+                <div class="icons">
+                  <i class="fab fa-google-plus-g"></i>
+                </div>
+                <div class="icons">
+                  <i class="fab fa-github"></i>
+                </div>
+              </div>
+              <p class="text-gray-400 text-lg capitalize text-center">Or sign in with email.</p>
+              
+              <form id="signinForm"  method="post">
+                
+                <div class="flex mb-6 px-4 relative">
+                  <i class="fas fa-envelope translate-x-4 translate-y-5 text-xl
+                  text-gray-600 absolute"></i>
+                  <input type="email" name="email" id="email" placeholder="Email address" class="auth" />
+                </div>
+                
+                <div class="flex mb-6 px-4 relative">
+                  <i class="fas fa-lock translate-x-4 translate-y-5 text-xl
+                  text-gray-600 absolute"></i>
+                  <input type="password" name="password" id="password" placeholder="Full Name" class="auth" />
+                </div>
+               <p class="text-right text-lg font-bold mb-5 mr-5 text-blue-500">Forgot password??</p>
+                <div class="flex px-4 mb-6 justify-center items-center">
+                  <button class="w-80 h-14 rounded-lg bg-blue-500 text-lg
+                  text-center px-6 py-4 hover:opacity-90 text-white" type="submit">Sign
+                  In</button>
+                </div>
+              </form>
+                <h3 class="text-xl text-center my-2 text-gray-400 sm:hidden">OR</h3>
+                <div class="sm:hidden flex px-4 mb-6 justify-center items-center">
+                  <button id="signupChange4" class="w-80 h-14 rounded-lg border border-brightorange text-lg
+                  text-center px-6 py-4 hover:bg-brightorange hover:text-white
+                  text-blue-500">Sign Up</button>
+                </div>
+            </div>
+            
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <script src="static/js/signup.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>
